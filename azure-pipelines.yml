@@ -28,3 +28,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
      artifactName: drop
+
+- script: |
+    export GITHUB_AUTH_TOKEN=$(AUTH_TOKEN)
+    $(Build.SourcesDirectory)/scorecard --repo=$(repo)
