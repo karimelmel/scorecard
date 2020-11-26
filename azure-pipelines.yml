@@ -8,7 +8,7 @@ trigger:
 
 parameters:
 - name: repo
-  displayName: Github url
+  displayName: Github URL
   type: string
 
 pool:
