@@ -6,6 +6,11 @@
 trigger:
 - main
 
+parameters:
+- name: repository
+  displayName: Repository
+  type: string
+
 pool:
   vmImage: 'ubuntu-latest'
 
