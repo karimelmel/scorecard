@@ -3,9 +3,6 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- main
-
 parameters:
 - name: repo
   displayName: Github URL
@@ -36,4 +33,4 @@ steps:
 
 - script: |
     export GITHUB_AUTH_TOKEN=$(AUTH_TOKEN)
-    $(Build.SourcesDirectory)/scorecard --repo=$(repo)
+    $(Build.SourcesDirectory)/scorecard --repo=${{ parameters.repo }}
