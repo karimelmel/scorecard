@@ -7,8 +7,8 @@ trigger:
 - main
 
 parameters:
-- name: repository
-  displayName: Repository
+- name: repo
+  displayName: Github url
   type: string
 
 pool:
